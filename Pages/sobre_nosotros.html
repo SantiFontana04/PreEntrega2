@@ -12,16 +12,18 @@
 <body>
     <!--HEADER-->
     <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <img src="../Imagenes/Logo.png" alt="Logo">
-            </div>
-            <ul class="nav_list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <input type="checkbox" id="open-menu" class="header__checkbox">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="../Img/Logo.png" alt="Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../index.html">Home</a></li>
+                <li class="header__nav-item"><a href="productos.html">Productos</a></li>
+                <li class="header__nav-item"><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                <li class="header__nav-item"><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li class="header__nav-item"><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +33,7 @@
     <main class="main">
         <h1 class="title">SOBRE NOSOTROS</h1>
         <section class="sobre_nosotros">
-            <article>
+            <article class="">
                 <h2>Nuestra Historia</h2>
                 <p>La Atajada nació con el objetivo de ofrecer indumentaria deportiva de calidad a precios accesibles. Desde nuestros inicios, nos hemos dedicado a equipar a los amantes del deporte con los mejores productos.</p>
             </article>
@@ -63,7 +65,7 @@
     <!--FOOTER-->
     <footer class="footer">
         <section>
-            <p>Copyright © 2023-2024 La Atajada</p>
+            <strong>La Atajada</strong> - Copyright
         </section>
     </footer>
     <!--FOOTER ENDS-->
