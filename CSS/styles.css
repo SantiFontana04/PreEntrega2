@@ -81,7 +81,7 @@ body, div, ul, nav, header, footer, a, li, label {
     text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .header {
         padding: 10px 0;
     }
@@ -132,11 +132,63 @@ body, div, ul, nav, header, footer, a, li, label {
 
 /* PREGUNTAS */
 
-.preguntas {
-    color: #fff;
-    background-color: #111;
-    text-align: center;
+.faq {
+    max-width: clamp(300px, 70%, 700px);
+    margin: auto;
+    color: #1a2a53;
 }
+
+details {
+    background-color: #ddd;
+    margin: 7px;
+    padding: 7px;
+    max-height: 34px;
+    transition: max-height 2s;
+    overflow: hidden;
+}
+
+details[open] {
+    max-height: 400px;
+}
+
+.content {
+    padding: 5px 10px;
+    margin: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid ;
+    font-size: .8rem;
+    color: #48e;
+}
+
+summary {
+    user-select: none;
+    position: relative;
+}
+
+summary::marker {
+    content: "";
+}
+
+summary::before {
+    content: "+";
+    color: #48e;
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+}
+
+details[open] summary::before {
+    content: "-";
+}
+
+details b {
+    background-color: #48e;
+    padding: 2px 4px;
+    color: #fff;
+    margin-right: 4px;
+}
+
+
 
 /* PREGUNTAS ENDS */
 
@@ -177,12 +229,6 @@ body, div, ul, nav, header, footer, a, li, label {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .sobre_nosotros article {
-        flex: 1 1 100%;
-    }
-}
-
 /* SOBRE NOSOTROS ENDS */
 
 /* PRODUCTOS */
@@ -202,6 +248,9 @@ body, div, ul, nav, header, footer, a, li, label {
 .productos__title {
     font-size: 2rem;
     margin-bottom: 0;
+    text-align: center;
+    color: #48e;
+    margin: 20px;
 }
 
 .productos__producto-container {
@@ -220,6 +269,7 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .destacados{
     grid-template-columns: 1fr 1fr;
+    color: #fff;
 }
 
 .productos__producto {
@@ -295,6 +345,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .form__title {
+    margin-top: -40px;
     font-size: 2rem;
     color: #48e;
 }
